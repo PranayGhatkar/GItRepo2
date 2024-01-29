@@ -1,0 +1,86 @@
+
+pghatkar@INLEN8520052300 MINGW64 ~ (master)
+$ cd
+
+pghatkar@INLEN8520052300 MINGW64 ~ (master)
+$ cd GitDemo
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitDemo (main)
+$ cd ..
+
+pghatkar@INLEN8520052300 MINGW64 ~ (master)
+$ ls
+DemoFile2
+ GitDemo/
+
+pghatkar@INLEN8520052300 MINGW64 ~ (master)
+$ git init GitRepo2
+Initialized empty Git repository in C:/Users/PGHATKAR/GitRepo2/.git/
+
+pghatkar@INLEN8520052300 MINGW64 ~ (master)
+$ ls 
+DemoFile2
+ GitDemo/
+ GitRepo2/
+ 
+pghatkar@INLEN8520052300 MINGW64 ~ (master)
+$ cd GitRepo2
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$ echo "hello" >>GitRepoFile2
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$ git add GitRepoFile2
+warning: in the working copy of 'GitRepoFile2', LF will be replaced by CRLF the next time Git touches it
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$ git commit -m "Created on 29th Jan New repo 4th lec"
+[master (root-commit) e369ca2] Created on 29th Jan New repo 4th lec
+ 1 file changed, 1 insertion(+)
+ create mode 100644 GitRepoFile2
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$ git log
+commit e369ca28bcbe9ff123eb535725718d8b70bd7431 (HEAD -> master)
+Author: Pranay Tanaji Ghatkar <react.struggler@gamil.com>
+Date:   Mon Jan 29 16:52:54 2024 +0530
+
+    Created on 29th Jan New repo 4th lec
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$ git remote
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$ git remote -v
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$ git remote add origin https://github.com/PranayGhatkar/GitRepo2.git
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$ git remote -v
+origin  https://github.com/PranayGhatkar/GitRepo2.git (fetch)
+origin  https://github.com/PranayGhatkar/GitRepo2.git (push)
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$  git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 254 bytes | 127.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/PranayGhatkar/GitRepo2.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+pghatkar@INLEN8520052300 MINGW64 ~/GitRepo2 (master)
+$
